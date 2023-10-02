@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+
+.products{
+    padding-top: 100px;
+
+    .info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    
+        button {
+          padding: 8px 12px; /* Increase padding for a larger button */
+          margin-left: 20px;
+          cursor: pointer;
+          background-color: $softer-bg; /* Use your primary color */
+          color: white;
+          border: none;
+          border-radius: 9px; /* Add rounded corners */
+          font-size: 15px; /* Adjust font size */
+          transition: background-color 0.3s ease; /* Add a smooth transition */
+    
+          &:hover {
+            background-color: $soft-bg; /* Change color on hover */
+          }
+        }
+      }
+}

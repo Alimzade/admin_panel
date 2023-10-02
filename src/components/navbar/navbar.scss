@@ -1,0 +1,83 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0; /* Fixed to the top of the viewport */
+    background-color: #2a3447; /* Add your desired background color */
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a box shadow for separation */
+
+    .logo{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        gap: 10px;
+
+        img {
+            /* Adjust the size of the logo image */
+            width: 180px; /* Change this to your preferred size */
+            height: 73px; /* Change this to your preferred size */
+        }
+    }
+
+    .icons{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .icon{
+            @include lg{
+                display: none;
+            }
+        }
+
+        .notification{
+            position: relative;
+            span{
+                background-color: red;
+                color: white;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 11px;
+            }
+        
+        }
+
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img{
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .expand{
+            padding: 6px;
+            &:hover{
+                background-color: $softer-bg;
+            }
+            @include lg{
+                display: none;
+            }
+        }
+    }
+}

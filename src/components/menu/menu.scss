@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.menu {
+    padding-top: 90px;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+
+
+        .title {
+            font-size: 12px;
+            font-weight: 200;
+            color: $soft-color;
+            text-transform: uppercase;
+
+            @include lg {
+                display: none;
+            }
+        }
+
+        .listItem {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 5px;
+
+            .listItemTitle {
+                @include lg {
+                    display: none;
+                }
+            }
+
+            // Add this rule to adjust the layout when screen width is reduced
+            @include lg {
+                .listItemTitle {
+                    display: none; // Hide titles on menu items
+                }
+
+            }
+
+            &:hover {
+                background-color: $soft-bg;
+            }
+
+        }
+    }
+
+    // Add this rule to collapse the menu when screen width is reduced
+    @include lg {
+        width: 40px; // Adjust the width as needed
+    }
+
+}
