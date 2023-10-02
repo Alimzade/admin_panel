@@ -1,0 +1,1 @@
+<h1>Back-end admin panel</h1>
