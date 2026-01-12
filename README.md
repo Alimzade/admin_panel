@@ -23,7 +23,7 @@ A high-performance **React-based Administrative Interface** engineered for strea
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Alimzade/admin_panel.git](https://github.com/Alimzade/admin_panel.git)
+    git clone https://github.com/Alimzade/admin_panel.git
     ```
 
 2.  **Install dependencies:**
